@@ -1,11 +1,11 @@
 <?php
 
+// URL::forceScheme('https');
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\PostController;
 use App\Http\Controllers\ViewsController;
 use App\Http\Controllers\ProfileController;
 use Illuminate\Support\Facades\URL;
-// URL::forceScheme('https');
 
 /*
 |--------------------------------------------------------------------------
