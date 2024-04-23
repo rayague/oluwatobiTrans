@@ -3,6 +3,7 @@
 namespace Database\Seeders;
 
 // use Illuminate\Database\Console\Seeds\WithoutModelEvents;
+use App\Models\Post;
 use Illuminate\Database\Seeder;
 use Illuminate\Support\Facades\Hash;
 
@@ -14,10 +15,13 @@ class DatabaseSeeder extends Seeder
     public function run(): void
     {
 
+
         \App\Models\User::factory()->create([
             'name' => 'seraphin',
             'email' => 'seraphinhoungbedji94@gmail.com',
             'password' => Hash::make('@oluwatobiTrans@'),
         ]);
+
+        Post::factory()->count(1)->create();
     }
 }
